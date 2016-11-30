@@ -8,7 +8,7 @@ In a standard RTS, most decisions are made on a very tactical level. The faster 
 
 I propose a game where the reverse is true. The winner is the player with the better grasp on strategy, not time management. To do this, we need higher level abstractions which encapsulate all the fiddly bits you would control manually in a traditional RTS.
 
-For example:
+Sample abstractions include:
 
 * Flank the enemy
 * Take defensive positions
@@ -24,7 +24,11 @@ Because time management is no longer the primary challenge, mastery becomes a fu
 
 You start with a small group of infantry and a few basic cards.
 
+![Small group of infantry](design/images/early_game_01.png)
+
 When the enemy attacks, you start playing cards in an attempt to defeat them.
+
+![Attack the enemy](design/images/early_game_02.png)
 
 If you win, you’re rewarded with a new card, or a new type of soldier, and may continue to the next battle.
 
@@ -32,25 +36,34 @@ If you lose, you must repeat the battle until you win.
 
 ### Mid game
 
-By this time, you have a medium-sized army with varying numbers of infantry, cavalry, and archers.
+By this time, you have a medium-sized army with varying numbers of infantry, armor, and ranged units.
+
+![Medium-sized army](design/images/mid_game_01.png)
 
 You are limited to five cards at a time. Additional cards are drawn from the deck as you play them.
 
+![Five card max](design/images/mid_game_02.png)
+
 You may split your army into as many as three groups. Commands may be issued to an individual group, or the army as a whole.
+
+![Split army into three](design/images/mid_game_03.png)
 
 ### Late game
 
-You gain access to siege equipment as you encounter enemy outposts and approach their base.
+You gain access to artillery equipment as you encounter enemy outposts and approach their base.
 
 You are able to stack as many as three cards together. Once played, a stack issues each command sequentially.
 
-As your groups gain experience, they are able to issue their own commands if left idle.
+![Stack cards](design/images/late_game_01.png)
+
+As your groups gain experience, they are able to issue their own commands when left idle.
 
 ## Storyline
 
 TBD
 
-## Notes
+## Open questions
 
-* Basic AI would be nice. Some level of machine learning would be phenomenal. Probably a prerequisite for good gameplay.
+* How much of this is reasonable to build in a year? Better to build something simple that works than something complex which doesn’t.
+* How hard is it to build an AI? Basic AI would be nice boost for gameplay/replayability.
 * Even in 2D, this game may require substantial art direction. Can we use procedural generation to offload some of the effort?
