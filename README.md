@@ -20,6 +20,17 @@ Because time management is no longer the primary challenge, mastery becomes a fu
 
 ## Gameplay
 
+The game is a linear campaign, consisting of individual battles. Each battle starts with an army and a deck of cards. The enemy attack may consist of multiple waves. The goal is to defeat each wave by utilizing a winning strategy using the cards available to you.
+
+Types of cards:
+
+* Attack (e.g. frontal assault)
+* Positional (e.g. retreat, flank)
+* Reinforcement (e.g. add 5 archers to the battle)
+* Enhancement (e.g. give infantry double speed)
+
+Gameplay starts slow and gradually becomes more complex and difficult as you advance. However, it should never feel rushed. You win by thinking multiple steps ahead and anticipating the enemy, not by playing cards as quickly as possible.
+
 ### Early game
 
 You start with a small group of infantry and a few basic cards.
@@ -67,3 +78,4 @@ TBD
 * How much of this is reasonable to build in a year? Better to build something simple that works than something complex which doesn’t.
 * How hard is it to build an AI? Basic AI would be nice boost for gameplay/replayability.
 * Even in 2D, this game may require substantial art direction. Can we use procedural generation to offload some of the effort?
+* What platform should we develop for? (i.e. iOS is easier and more lucrative, but you have to have a Mac to write apps for it)
