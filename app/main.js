@@ -1,12 +1,16 @@
 import Arena from './modules/arena.js';
-import Soldier from './modules/soldier.js';
 
 window.CardCommander = (function () {
-    var arena = Arena();
     
-    // Add some soldiers to the arena
-    arena.add(Soldier(arena.$el));
+    // Initialize the arena
+    var arena = Arena();
     arena.draw();
+
+    // Set up event handler
+    window.document.addEventListener('click', evt => {
+        arena.toggle(evt.clientX, evt.clientY);
+        arena.draw();
+    });
 
     return {
         get arena() {
