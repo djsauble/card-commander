@@ -2,6 +2,12 @@
 
 Use cards to control your armies and defeat your opponents.
 
+## Start the game
+
+Run the following command in the app/ folder.
+
+`ruby -run -e httpd . -p 8000`
+
 ## Concept
 
 In a standard RTS, most decisions are made on a very tactical level. The faster you click, the more you get done, and the better the outcome. Unfortunately, this means that skill is largely a measure of dexterity, not intelligence. Starcraft vs. Chess.
